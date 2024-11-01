@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Display</title>
+    <link rel="stylesheet" href="../css/student.css">
+</head>
+<body>
+    <h1>Student Marks Display</h1>
+    <div class="controls">
+        <input type="text" id="filter" placeholder="Filter by name" onkeyup="filterStudents()">
+        <button onclick="sortStudents()">Sort by Marks</button>
+        <button onclick="generatePDF()">Download PDF</button>
+    </div>
+    <table id="students-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody id="students-body">
+            
+        </tbody>
+    </table>
+    <script src="../js/student.js"></script>
+</body>
+</html>
